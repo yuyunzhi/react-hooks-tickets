@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './index/App.jsx';
+import { Provider } from 'react-redux';
+import store from './store';
 import * as serviceWorker from './serviceWorker';
+import 'normalize.css/normalize.css'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
