@@ -8,9 +8,9 @@ import * as serviceWorker from '../serviceWorker';
 import 'normalize.css/normalize.css'
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+    <Provider store={store}>
+        <App />
+    </Provider>,
   document.getElementById('root')
 );
 
