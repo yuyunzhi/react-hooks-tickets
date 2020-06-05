@@ -1,17 +1,28 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import logo from '../logo.svg';
+import {connect} from 'react-redux';
 import './App.css';
 
-function App(props) {
-  return (
-      <div className="App">
+import Header from "../common/Header";
+import DepartDate from "./DepartDate";
+import HighSpeed from "./HighSpeed";
+import Journey from "./Journey";
+import Submit from "./Submit";
 
-      </div>
-  );
+
+function App(props) {
+    return (
+        <div className="App">
+            <Header/>
+            <Journey/>
+            <DepartDate/>
+            <HighSpeed/>
+            <Submit/>
+        </div>
+    );
 }
 
 export default connect(
-    function mapStateToProps(state){},
-    function mapDispatchToProps(dispatch) {}
+    function mapStateToProps(state) {},
+    function mapDispatchToProps(dispatch) {
+    }
 )(App);
